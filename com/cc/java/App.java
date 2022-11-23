@@ -3,16 +3,35 @@ package com.cc.java;
 public class App {
     
     public static void main(String[] args) {
-        new Cat();
-        Cat cat = new Cat();                // Jede Klasse ist ein Datentyp!
-        output("Blick von aussen: " + cat);
-        cat.tellYourAddress();
+        
+        // neues Objekt wird erzeugt, Adresse wird cat zugewiesen
+        Cat cat = new Cat("Gustavo", "golden-brown", 28);                // Jede Klasse ist ein Datentyp!
+        // cat.name = "Gustavo";
+        // cat.furColor = "golden-brown";
+        // cat.age = 29;
+        // output(cat.name);
+        // output(cat.furColor);
+        // output(String.valueOf(cat.age));
+      
+        output(cat.tellYourName());
+        output(cat.tellYourColor());
+        output(String.valueOf(cat.tellYourAge()));
+
+        // output("Blick von aussen: " + cat);
+        // cat.tellYourAddress();
 
         output("-------------------");
 
-        Cat cat1 = new Cat();                
-        output("Blick von aussen: " + cat1);
-        cat1.tellYourAddress();
+        // Cat cat1 = new Cat();                
+        // cat1.name = "Gizelle";
+        // cat1.furColor = "snow-white";
+        // cat1.age = 23;
+
+        // output(cat1.tellYourName());
+        // output(cat1.tellYourColor());
+        // output(String.valueOf(cat1.tellYourAge()));
+        // output("Blick von aussen: " + cat1);
+        // cat1.tellYourAddress();
     }
 
     public static void output(String string) {
