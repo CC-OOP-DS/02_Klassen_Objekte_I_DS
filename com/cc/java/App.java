@@ -12,10 +12,12 @@ public class App {
         // output(cat.name);
         // output(cat.furColor);
         // output(String.valueOf(cat.age));
-      
-        output(cat.tellYourName());
-        output(cat.tellYourColor());
-        output(String.valueOf(cat.tellYourAge()));
+        cat.setFurColor("grey");
+
+        output(cat.getName());
+        output(cat.getFurColor());
+        output(String.valueOf(cat.getAge()));
+
 
         // output("Blick von aussen: " + cat);
         // cat.tellYourAddress();
